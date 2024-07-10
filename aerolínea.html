@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroVia Express</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+        }
+        .navbar {
+            background-color: #051B54;
+        }
+        .navbar-brand {
+            font-family: "Gill Sans", sans-serif;
+        }
+        .btn-login {
+            background-color: #FFFFFF33;
+            color: white;
+        }
+        .promo-section {
+            background-color: #62DAD3;
+            color: #051B54;
+            padding: 2rem;
+        }
+        .form-section {
+            color: #051B54;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">AeroVia Express</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Ofertas y destinos
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Mis viajes
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Centro de ayuda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" aria-disabled="true">Estado de vuelo</a>
+                    </li>
+                </ul>
+                <button class="btn btn-login ms-auto" type="button">Iniciar Sesión</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección promocional -->
+    <div class="container mt-5">
+        <div class="card mb-3" style="max-width: 1000px; background-color: #62DAD3;">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">¡Vacaciones de verano!</h5>
+                        <p class="card-text">Vuela por Chile y Sudamérica con hasta 40% de descuento. Encuentra paquetes, hoteles, seguros y arriendo de autos en AeroVia Express.</p>
+                        <p><a class="link-opacity-100" href="#">Compra aquí</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/img/polynesia.jpg" class="img-fluid" alt="Promoción Vacaciones">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulario de búsqueda -->
+    <div class="container">
+        <div class="form-section">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Vuelos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Paquetes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hoteles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Autos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Seguros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Upgrade</a>
+                </li>
+            </ul>
+            <form class="row g-3 mt-3">
+                <div class="col-md-4">
+                    <label for="inputIdaVuelta" class="form-label">Ida y Vuelta</label>
+                    <input type="text" class="form-control" id="inputIdaVuelta" value="Ida y Vuelta" disabled>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputEconomy" class="form-label">Economy</label>
+                    <input type="text" class="form-control" id="inputEconomy" value="Economy" disabled>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputPasajeros" class="form-label">1 Pasajero</label>
+                    <input type="text" class="form-control" id="inputPasajeros" value="1 Pasajero" disabled>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputOrigen" class="form-label">Origen</label>
+                    <input type="text" class="form-control" id="inputOrigen" placeholder="Ciudad de origen">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputDestino" class="form-label">Destino</label>
+                    <input type="text" class="form-control" id="inputDestino" placeholder="Ciudad de destino">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputFechaIda" class="form-label">Fecha Ida</label>
+                    <input type="date" class="form-control" id="inputFechaIda">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputFechaVuelta" class="form-label">Fecha Vuelta</label>
+                    <input type="date" class="form-control" id="inputFechaVuelta" disabled>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
